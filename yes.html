@@ -12,13 +12,30 @@
 <div class="gif_container">
                 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmU5aGI3dGVzNnRyOTYxc2RyeTI4MDIwdHhyMmxoazJkaGo1c3pzYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" height="350" >
             </div>
-     <position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);>
-  <audio controls>
-        <source src="taylor.wav">
-    </audio>
+  
+<button id="ASong" onClick="playPause()">
+  <audio
+    src="taylor.wav"
+    autoplay
+    loop
+  ></audio>
+  May magic pag naclick
+</button>
+
+<script>
+  var aud = document.getElementById("ASong").children[0];
+  var isPlaying = false;
+  aud.pause();
+
+  function playPause() {
+    if (isPlaying) {
+      aud.pause();
+    } else {
+      aud.play();
+    }
+    isPlaying = !isPlaying;
+  }
+</script>
 
 <h1>Hi, this is for you.</h1>
 <p>
