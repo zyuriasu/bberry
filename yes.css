@@ -88,3 +88,9 @@ h1::after {
     color: teal;
   }
 }
+
+@media screen and (max-width:767px) {
+.fe-block-62dde0088d1f80abcf282a60 {
+	grid-column-start: 3 !important;
+}
+}
